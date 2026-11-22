@@ -1,3 +1,23 @@
+> **Fork of [coffincw/UMass-STEM-Discord-Bot](https://github.com/coffincw/UMass-STEM-Discord-Bot).** Discord bot for the UMass STEM server: meme generation, image manipulation, coronavirus stats and role commands (Python). The upstream README follows unchanged.
+
+## Architecture
+
+```mermaid
+flowchart LR
+    u["Discord user<br/>command prefix"] --> bot["src/umassstembot/bot.py"]
+    bot --> m["custom_meme, overlay, filters, face_detection"]
+    bot --> c["coronavirus, discord_calendar, stem_role_commands"]
+    m --> assets["fonts, memes, media"]
+```
+
+## Related repos
+
+| Repo | Relationship |
+|---|---|
+| [coffincw/UMass-STEM-Discord-Bot](https://github.com/coffincw/UMass-STEM-Discord-Bot) | Upstream project |
+
+---
+
 <img align="right" src="https://github.com/coffincw/UMass-STEM-Discord-Bot/blob/master/media/Umass-stem-logo-400.png?raw=true">
 
 # UMass STEM Discord Bot 
